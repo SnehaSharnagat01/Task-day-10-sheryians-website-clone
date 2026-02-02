@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "manrope";
+    src: url(Manrope/Manrope-VariableFont_wght.ttf);
+}
+/* @font-face {
+    font-family: "neue";
+    src: url(PP\ Neue\ Machina/);
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "manrope";
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    background: radial-gradient(#3E190D 0%, black, black);
+}
+
+/* NAVBAR */
+nav {
+    height: 5vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 4vw;
+}
+
+nav #logo {
+    height: 2vw;
+}
+
+/* CENTER NAV */
+nav .navcenter {
+    background-color: #140F0F;
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+    color: grey;
+    padding: 1vw 2vw;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    box-shadow:
+        -1px 1px 1px black,
+        inset -1px -1px 2px rgba(255, 255, 255, 0.23);
+}
+
+nav .navcenter h4 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* ACTIVE ITEM */
+nav .navcenter h4:first-child {
+    color: white;
+}
+
+/* PROFILE */
+nav #profile {
+    height: 2.7vw;
+    border-radius: 50%;
+}
+
+/* MENU BUTTON */
+nav #menu {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    display: none;
+    cursor: pointer;
+}
+
+#page1 #hero {
+    width: 100%;
+    /* background-color: red; */
+    padding-top: 4.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page1 #hero h3{
+    font-size: 1.3vw;
+    /* letter-spacing: 1px; */
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #E25829;
+    padding-bottom: 1vw;
+}
+
+#page1 #hero h1{
+    /* font-family: "neue"; */
+    font-size: 4.3vw;
+    font-weight: 500;
+    line-height: 1.2;
+    padding-bottom: 1vw;
+
+}
+#page1 #hero h1 span{
+    padding: 0 5px;
+    border: 1px solid #E25829;
+    background-color: #3C180C;
+}
+#page1 #hero p{
+    padding-bottom: 2.2vw;
+    color: rgb(179, 177, 177);
+    font-size: 1.5vw;
+
+}
+
+#page1 #hero #story {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 2vw;
+}
+
+#page1 #hero #story #avatars {
+    display: flex;
+    align-items: flex-end;
+    /* gap: 2vw; */
+}
+
+#page1 #hero #story #avatars img {
+    height: 3.1vw;
+    object-fit: cover;
+    width: 3.4vw;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+#page1 #hero #story h3{
+    color: white;
+}
+#page1 #hero #story h3 span{
+    color: #E25829;
+}
+
+#page1 #hero #story #avatars img:nth-child(1),
+#page1 #hero #story #avatars img:nth-child(3) {
+    object-position: center;
+}
+
+.cta1{
+    padding: 12px 24px;
+    border-radius: 10px;
+
+    border: 0.5px solid rgba(255, 255, 255, 0.627);
+    
+    background: radial-gradient(rgb(194, 96, 21),rgb(214, 133, 20));
+}
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    nav {
+        height: 60px;
+    }
+
+    nav #menu {
+        display: block;
+    }
+
+    nav .navcenter,
+    nav #profile {
+        display: none;
+    }
+
+    nav #logo {
+        height: 35px;
+    }
+}
