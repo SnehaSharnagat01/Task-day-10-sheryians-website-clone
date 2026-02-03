@@ -368,28 +368,15 @@ nav #menu {
         margin-left: -10px;
     }
 
-    /* .cta1 {
-        font-size: 14px;
-        padding: 12px 24px;
-    } */
-
     .video {
         width: 95%;
         height: 60vw;
         margin: 40px auto;
     }
 
-    /* Hide floating items on mobile */
-    /* .video .left-item,
-    .video .right-item {
-        display: none;
-    } */
 }
 
 
-/* ===========================
-   SMALL MOBILE (max-width: 480px)
-=========================== */
 @media (max-width: 480px) {
 
     #page1 #hero h1 {
@@ -401,7 +388,6 @@ nav #menu {
     }
 
     .cta1 {
-        /* width: 90%; */
         font-size: 10px;
         text-align: center;
     }
